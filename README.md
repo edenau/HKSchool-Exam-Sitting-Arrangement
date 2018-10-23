@@ -44,4 +44,14 @@ It can potentially bring the benefits, for instance
 - Perform tasks effectively and analyze data automatically using imported data
 - Allocate seats for students in good order
 
-### Hierarchy
+### Work Flow
+
+ESAS requires students’ data and examination information. The former mainly refer to personal profile (e.g. name, class, class number) and subjects each student takes, and it is stored in a spreadsheet file; whereas the latter includes number of papers of each subject, duration of each paper and dates available for the examination period. These inputs are used to calculate subject crashes by exhaustive search in order to set an optimal time table. Hence, we can then generate the time table and admission forms for every student. The following flowchart (from top to bottom) illustrates how ESAS can be done by breaking it into different sub-problems.
+
+<table>
+  <tr><th colspan="3">ESAS</th></tr>
+  <tr><th colspan="3">Input student data and exam information</th></tr>
+  <tr><th colspan="3">Calculate subject crash (exhaustive search)</th></tr>
+  <tr><th colspan="3">Arrange exam setting</th></tr>
+  <tr><th>Generate time table</th><th>Generate seat allocation</th><th>Generate admission forms</th></tr>
+</table>

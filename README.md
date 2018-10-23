@@ -60,6 +60,7 @@ ESAS requires students’ data and examination information. The former mainly re
 ### Interface
 
 I adopted command line interface but it could potentially be upgraded to a graphical one. The interface contains three parts. Part A shows some reminders to the user. Using the following figure as an example, the system is now reminding the user to import a file called ‘all_sub.csv’. Part B shows the menu containing all procedures which the user can choose to do next. Part C provides a space for the user to input their option among those given procedures. They are expected to input the number representation of the corresponding procedures.
+
 ![fig1](figures/fig1.png)
 <sup> Yup this was the old name of my system, didn't bother to fix it </sup> 
 
@@ -68,6 +69,7 @@ I used Data Flow Diagrams (DFDs) to illustrate how ESAS works. This is a very us
 
 #### Context (Level 0 DFD)
 It describes the essence of ESAS. The major flows between the system and the stakeholder (i.e. assistant) is shown below.
+
 ![dfd0](figures/dfd0.png)
 *Input:*
 - Information of each student
@@ -92,10 +94,12 @@ There are five various data stored:
 - D5 Seat allocation for each exam
 
 The following level 1 DFD constructs the main idea of the system after decomposing it into several processes.
+
 ![dfd1](figures/dfd1.png)
 
 #### Interface Logic Flow
 The following diagram displays the logic flow on user interface. There should also be one of the options that provide a pathway for user to exit the sysetm if they want to.
+
 ![dfd_interface](figures/dfd_interface.png)
 
 ## Stage Design
@@ -106,6 +110,7 @@ For arranging an exam, the first thing to do is to know all the subjects availab
 - All available elective subjects’ name (both full name & short term not exceeding 4 characters) in csv file
 
 For the format, the first column with all short terms (not exceeding 4 characters) of available elective subjects, with the second column all relevant full names of those elective subjects.
+
 ![fig2](figures/fig2.png)
 
 Subfunctions are are illustrated below, just go through the code or run the system for more information.
@@ -122,11 +127,13 @@ For analyzing information of students, loads of scattered student information (f
 - Ungrouped subjects taken by students (in any order, containing all Form 4-6 students) - in csv file
 
 For the format, the first column contains the class which the student belongs to, carrying 2 characters – the form number at the front and the class (latin) letter at the back. The second column contains the class number of the student. The third column contains the full name of him/her. The fourth column contains a short term of an elective subject that the student is taking. Note that almost each student studies more than 1 subjects, a student will occupy more than 1 row of the data in this csv file.
+
 ![fig3](figures/fig3.png)
 
 *Output:*
 - 3 tidied student information files (one for each form) – in csv files, see the graph below
-- 3 configuration files for use in other stages (one for each form) - in ini files 
+- 3 configuration files for use in other stages (one for each form) - in ini files
+
 ![fig4](figures/fig4.png)
 
 The data rows are ordered in alphabetical order of class, followed by ascending order of class number, with each row consisting all information of a single student. The first column is a character showing the form (the form number should be the same inside the same file). The second column is a latin character showing the class of the student. The third column is the class number of the student and the fourth column is the full name of the student. From the fifth to eighth column, it stores some short term of elective subjects that the student is currently taking. Not all cells are filled since not all students take 4 subjects. The leftmost column is preferentially filled than the rightmost, as it is clearly demonstrated in the above example.
@@ -144,7 +151,7 @@ Regarding the configuration file, here is an example.
 ```
 The data rows are ordered the same way as the previous csv file output. In an ini file, the number of rows equals to the number of students in that form. Each row represents the status of a single student. The number of column should be equivalent to the number of elective subjects available. Each column represents different subjects. The order of columns follows the order of subjects arranged inside “all_sub.csv”. That means a certain character is showing if a student takes a certain subject or not, with ‘0’ meaning they don't take it whereas ‘1’ means they do.
 
-The following table summarizes the file handling works in this stage.
+*File handling:*
 <table>
   <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
   <tr><td>ele_list.csv</td><td>Input</td><td>Ungrouped information about who takes what subjects (in any order, containing all Form 4-6 students)</td></tr>
@@ -156,3 +163,22 @@ The following table summarizes the file handling works in this stage.
   <tr><td>sub_rec_6.ini</td><td>Output</td><td>Configuration file for use in other stages for Form 6</td></tr>
 </table>
 
+### Stage 3.0 -	Update exam information
+Simple stuff. No external files involved in input.
+*Input:*
+- Time (in minutes) needed for each paper
+
+![fig5](figures/fig5.png)
+
+*Output:*
+- Time (in minutes) needed for each paper - in csv file
+
+![fig6](figures/fig6.png)
+
+They are all pretty self explanatory.
+
+*File handling:*
+<table>
+  <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
+  <tr><td>sub_time.csv</td><td>Output</td><td>Time (in minutes) needed for each paper</td></tr>
+</table>

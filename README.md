@@ -63,3 +63,9 @@ I adopted command line interface but it could potentially be upgraded to a graph
 
 ![fig1](figures/fig1.png)
 <sup> Yup this was the old name of my system, didn't bother to fix it </sup> 
+
+### Procedures
+I used Data Flow Diagrams (DFDs) to illustrate how ESAS works. This is a very useful graphical modeling tool and it shows all the main requirements of the system such as processes, data flowing into, out of and within the system, and the way information is stored in the system.
+
+#### Context (Level 0 DFD)
+It describes the essence of ESAS. The major flows between the system and the stakeholder (i.e. assistant) is shown below.

@@ -100,3 +100,7 @@ The following diagram displays the logic flow on user interface. There should al
 
 ## Stage Design
 ### Stage 1.0 - Update basic setting
+For arranging an exam, the first thing to do is to know all the subjects available. Note that no output is required for this stage. The input contains both short term (maximum 4 characters) and full name of each elective subject available, specified by the user. Since the input involved loads of data, user is recommended to insert this information using a csv file in advance. To sum up, the input in this procedure:
+- All available elective subjects’ name (both full name & short term not exceeding 4 characters) in csv file
+
+For the input format, the 1st column with all short terms (not exceeding 4 characters) of available elective subjects, with the 2nd column all relevant full names of those elective subjects.

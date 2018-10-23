@@ -69,7 +69,7 @@ I used Data Flow Diagrams (DFDs) to illustrate how ESAS works. This is a very us
 #### Context (Level 0 DFD)
 It describes the essence of ESAS. The major flows between the system and the stakeholder (i.e. assistant) is shown below.
 ![dfd0](figures/dfd0.png)
-**Input:**
+*Input:*
 - Information of each student
 - Basic setting
 - Information of each exam paper
@@ -102,7 +102,7 @@ The following diagram displays the logic flow on user interface. There should al
 ### Stage 1.0 - Update basic setting
 For arranging an exam, the first thing to do is to know all the subjects available. Note that no output is required for this stage. The input contains both short term (maximum 4 characters) and full name of each elective subject available, specified by the user. Since the input involved loads of data, user is recommended to insert this information using a csv file in advance. 
 
-**Input:**
+*Input:*
 - All available elective subjects’ name (both full name & short term not exceeding 4 characters) in csv file
 
 For the format, the first column with all short terms (not exceeding 4 characters) of available elective subjects, with the second column all relevant full names of those elective subjects.
@@ -118,13 +118,13 @@ Subfunctions are are illustrated below, just go through the code or run the syst
 ### Stage 2.0 - Analyze information of students
 For analyzing information of students, loads of scattered student information (from Form 4-6) regarding elective subjects they took are inputted by the user. This stage tries to tidy up those data. The following input involves thousands of data, and user must insert this kind of information using a csv file.
 
-**Input:**
+*Input:*
 - Ungrouped subjects taken by students (in any order, containing all Form 4-6 students) - in csv file
 
 For the format, the first column contains the class which the student belongs to, carrying 2 characters – the form number at the front and the class (latin) letter at the back. The second column contains the class number of the student. The third column contains the full name of him/her. The fourth column contains a short term of an elective subject that the student is taking. Note that almost each student studies more than 1 subjects, a student will occupy more than 1 row of the data in this csv file.
 ![fig3](figures/fig3.png)
 
-**Output:**
+*Output:*
 - 3 tidied student information files (one for each form) – in csv files, see the graph below
 - 3 configuration files for use in other stages (one for each form) - in ini files 
 ![fig4](figures/fig4.png)
@@ -142,5 +142,6 @@ Regarding the configuration file, here is an example.
 0110000000000
 0100010000000
 ```
+The data rows are ordered the same way as the previous csv file output. In an ini file, the number of rows equals to the number of students in that form. Each row represents the status of a single student. The number of column should be equivalent to the number of elective subjects available. Each column represents different subjects. The order of columns follows the order of subjects arranged inside “all_sub.csv”. That means a certain character is showing if a student takes a certain subject or not, with ‘0’ meaning they don't take it whereas ‘1’ means they do.
 
 

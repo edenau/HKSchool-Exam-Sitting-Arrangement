@@ -56,14 +56,14 @@ ESAS requires students’ data and examination information. The former mainly re
   <tr><th>Generate timetable</th><th>Generate seat allocation</th><th>Generate admission forms</th></tr>
 </table>
 
-## Design
+## Preliminary Design
 ### Interface
 
 I adopted command line interface but it could potentially be upgraded to a graphical one. The interface contains three parts. Part A shows some reminders to the user. Using the following figure as an example, the system is now reminding the user to import a file called ‘all_sub.csv’. Part B shows the menu containing all procedures which the user can choose to do next. Part C provides a space for the user to input their option among those given procedures. They are expected to input the number representation of the corresponding procedures.
 ![fig1](figures/fig1.png)
 <sup> Yup this was the old name of my system, didn't bother to fix it </sup> 
 
-### Procedures
+### Top Level Data Flow
 I used Data Flow Diagrams (DFDs) to illustrate how ESAS works. This is a very useful graphical modeling tool and it shows all the main requirements of the system such as processes, data flowing into, out of and within the system, and the way information is stored in the system.
 
 #### Context (Level 0 DFD)
@@ -97,3 +97,6 @@ The following level 1 DFD constructs the main idea of the system after decomposi
 #### Interface Logic Flow
 The following diagram displays the logic flow on user interface. There should also be one of the options that provide a pathway for user to exit the sysetm if they want to.
 ![dfd_interface](figures/dfd_interface.png)
+
+## Stage Design
+### Stage 1.0 - Update basic setting

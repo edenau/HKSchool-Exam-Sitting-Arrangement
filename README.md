@@ -1,7 +1,7 @@
 # Hong Kong School Internal Examination Seating Arrangement System
 
 ## Statement
-I did this in high school. I believe I did not to a great job in terms of documentation so sorry about that. Also sorry for me bad English as I wrote this years ago.
+I did this project and the write up in high school. I was bad in documentation and English so sorry for that.
 
 ## Objectives
 ### Background
@@ -50,7 +50,7 @@ ESAS requires students’ data and examination information. The former mainly re
 
 <table>
   <tr><th colspan="3">ESAS login authentication</th></tr>
-  <tr><th colspan="3">Input student data and exam information</th></tr>
+  <tr><th colspan="3">Import student data and exam information</th></tr>
   <tr><th colspan="3">Calculate subject crash (exhaustive search)</th></tr>
   <tr><th colspan="3">Arrange exam setting</th></tr>
   <tr><th>Generate time table</th><th>Generate seat allocation</th><th>Generate admission forms</th></tr>

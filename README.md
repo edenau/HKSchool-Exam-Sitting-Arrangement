@@ -30,13 +30,13 @@ The specific slip of admission form should look like this:
 </table>
 
 ### System Requirements and Benefits
-The Examination Seating Arrangement System (ESAS) aims to provide a convenient way to lay out pre-exam preparation such as time table arrangement, seat allocation etc.. The program has the following requirements:
+The Examination Seating Arrangement System (ESAS) aims to provide a convenient way to lay out pre-exam preparation such as timetable arrangement, seat allocation etc.. The program has the following requirements:
 - Clear interface for users – manager and assistant of examination. Clear instructions should be displayed to guide them.
 - Data of students can be imported for executing different tasks.
-- Subject crash comparison (students doing the same combinations of courses) can be calculated and the best solution of time table arrangement with the least crash can be found.
+- Subject crash comparison (students doing the same combinations of courses) can be calculated and the best solution of timetable arrangement with the least crash can be found.
 - Seat numbers should be allocated in order of class and class number for management convenience.
-- General time table and specific slips of admission form for all students can be
-generated automatically referring to the data imported before and the time table arranged, which retrenches human power.
+- General timetable and specific slips of admission form for all students can be
+generated automatically referring to the data imported before and the timetable arranged, which retrenches human power.
 
 It can potentially bring the benefits, for instance
 - Reduce time and workload for calculating subject crash comparison
@@ -46,14 +46,14 @@ It can potentially bring the benefits, for instance
 
 ### Work Flow
 
-ESAS requires students’ data and examination information. The former mainly refer to personal profile (e.g. name, class, class number) and subjects each student takes, and it is stored in a spreadsheet file; whereas the latter includes number of papers of each subject, duration of each paper and dates available for the examination period. These inputs are used to calculate subject crashes by exhaustive search in order to set an optimal time table. Hence, we can then generate the time table and admission forms for every student. The following flowchart (from top to bottom) illustrates how ESAS can be done by breaking it into different sub-problems.
+ESAS requires students’ data and examination information. The former mainly refer to personal profile (e.g. name, class, class number) and subjects each student takes, and it is stored in a spreadsheet file; whereas the latter includes number of papers of each subject, duration of each paper and dates available for the examination period. These inputs are used to calculate subject crashes by exhaustive search in order to set an optimal timetable. Hence, we can then generate the timetable and admission forms for every student. The following flowchart (from top to bottom) illustrates how ESAS can be done by breaking it into different sub-problems.
 
 <table>
   <tr><th colspan="3">ESAS login authentication</th></tr>
   <tr><th colspan="3">Import student data and exam information</th></tr>
   <tr><th colspan="3">Calculate subject crash (exhaustive search)</th></tr>
   <tr><th colspan="3">Arrange exam setting</th></tr>
-  <tr><th>Generate time table</th><th>Generate seat allocation</th><th>Generate admission forms</th></tr>
+  <tr><th>Generate timetable</th><th>Generate seat allocation</th><th>Generate admission forms</th></tr>
 </table>
 
 ## Design
@@ -69,3 +69,23 @@ I used Data Flow Diagrams (DFDs) to illustrate how ESAS works. This is a very us
 #### Context (Level 0 DFD)
 It describes the essence of ESAS. The major flows between the system and the stakeholder (i.e. assistant) is shown below.
 ![dfd0](figures/dfd0.png)
+Input:
+- Information of each student
+- Basic setting
+- Information of each exam paper
+Output:
+- Arrangement result
+
+#### Decomposition
+ESAS was divided into five stages: 
+- 1.0 Update basic setting
+- 2.0 Analyze information of students
+- 3.0 Update exam information
+- 4.0 Arrange exam
+- 5.0 Request arrangement result
+There are five various data stored: 
+- D1 Basic setting
+- D2 Subject taken for each student
+- D3 Information of each paper
+- D4 Timetable
+- D5 Seat allocation for each exam

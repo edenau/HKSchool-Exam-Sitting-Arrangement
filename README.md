@@ -76,16 +76,20 @@ Input:
 Output:
 - Arrangement result
 
-#### Decomposition
+#### Decomposition (Level 1 DFD)
 ESAS was divided into five stages: 
 - 1.0 Update basic setting
 - 2.0 Analyze information of students
 - 3.0 Update exam information
 - 4.0 Arrange exam
 - 5.0 Request arrangement result
+
 There are five various data stored: 
 - D1 Basic setting
 - D2 Subject taken for each student
 - D3 Information of each paper
 - D4 Timetable
 - D5 Seat allocation for each exam
+
+The following level 1 DFD constructs the main idea of the system after decomposing it into several processes.
+![dfd1](figures/dfd1.png)

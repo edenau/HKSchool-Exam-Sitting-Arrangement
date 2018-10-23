@@ -3,3 +3,4 @@ name_change/ele_list_sensitive.csv
 *.exe
 *.o
 *.xls
+.DS_Store

@@ -93,3 +93,7 @@ There are five various data stored:
 
 The following level 1 DFD constructs the main idea of the system after decomposing it into several processes.
 ![dfd1](figures/dfd1.png)
+
+#### Interface Logic Flow
+The following diagram displays the logic flow on user interface. There should also be one of the options that provide a pathway for user to exit the sysetm if they want to.
+![dfd_interface](figures/dfd_interface.png)

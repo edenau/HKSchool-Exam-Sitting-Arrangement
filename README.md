@@ -30,7 +30,18 @@ The specific slip of admission form should look like this:
 </table>
 
 ### System Requirements and Benefits
+The Examination Seating Arrangement System (ESAS) aims to provide a convenient way to lay out pre-exam preparation such as time table arrangement, seat allocation etc.. The program has the following requirements:
+- Clear interface for users – manager and assistant of examination. Clear instructions should be displayed to guide them.
+- Data of students can be imported for executing different tasks.
+- Subject crash comparison (students doing the same combinations of courses) can be calculated and the best solution of time table arrangement with the least crash can be found.
+- Seat numbers should be allocated in order of class and class number for management convenience.
+- General time table and specific slips of admission form for all students can be
+generated automatically referring to the data imported before and the time table arranged, which retrenches human power.
 
-
+It can potentially bring the benefits, for instance
+- Reduce time and workload for calculating subject crash comparison
+- Avoid human errors
+- Perform tasks effectively and analyze data automatically using imported data
+- Allocate seats for students in good order
 
 ### Hierarchy

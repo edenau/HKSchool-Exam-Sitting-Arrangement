@@ -144,4 +144,15 @@ Regarding the configuration file, here is an example.
 ```
 The data rows are ordered the same way as the previous csv file output. In an ini file, the number of rows equals to the number of students in that form. Each row represents the status of a single student. The number of column should be equivalent to the number of elective subjects available. Each column represents different subjects. The order of columns follows the order of subjects arranged inside “all_sub.csv”. That means a certain character is showing if a student takes a certain subject or not, with ‘0’ meaning they don't take it whereas ‘1’ means they do.
 
+The following table summarizes the file handling works in this stage.
+<table>
+  <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
+  <tr><th>ele_list.csv</th><th>Input</th><th>Ungrouped information about who takes what subjects (in any order, containing all Form 4-6 students)</th></tr>
+  <tr><th>stu_info_4.csv</th><th>Output</th><th>Tidied student information file for Form 4</th></tr>
+  <tr><th>stu_info_5.csv</th><th>Output</th><th>Tidied student information file for Form 5</th></tr>
+  <tr><th>stu_info_6.csv</th><th>Output</th><th>Tidied student information file for Form 6</th></tr>
+  <tr><th>sub_rec_4.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 4</th></tr>
+  <tr><th>sub_rec_5.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 5</th></tr>
+  <tr><th>sub_rec_6.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 6</th></tr>
+</table>
 

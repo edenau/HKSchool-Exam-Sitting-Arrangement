@@ -16,8 +16,8 @@ All students were required to complete the papers in the hall at the same time, 
 The specific slip of admission form should look like this:
 
 <table>
-  <tr><td colspan="5">Eden's High School 2012-2013 Final Examination</td></tr>
-  <tr><td colspan="5">AU, Eden 5E (1)</td></tr>
+  <tr><th colspan="5">Eden's High School 2012-2013 Final Examination</th></tr>
+  <tr><th colspan="5">AU, Eden 5E (1)</th></tr>
   <tr><td>Date</td><td>Time</td><td>Paper</td><td>Venue</td><td>Seat No.</td></tr>
   <tr><td>10 June (Mon)</td><td>08:30-10:00</td><td>English 1</td><td>Hall</td><td>278</td></tr>
   <tr><td>10 June (Mon)</td><td>10:30-12:30</td><td>English 2</td><td>Hall</td><td>278</td></tr>

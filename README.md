@@ -1,7 +1,7 @@
 # Hong Kong School Internal Examination Seating Arrangement System
 
 ## Project
-I did this in high school. I believe I did not to a great job in terms of documentation so sorry about that.
+I did this in high school. I believe I did not to a great job in terms of documentation so sorry about that. Also sorry for me bad English as I wrote this years ago.
 
 ## Background
 High school students studying in Hong Kong local schools are required to take part in 4 compulsory subjects, 1-3 elective subjects and an optional extended part of Mathematics module 1 or 2 (M1 or M2) under the New Senior Secondary (NSS) curriculum. There was a huge variety of subject combinations for them. There were about 600 students in Form 4 to Form 6 in my high school, and they all took different combinations of elective courses. Apart from the compulsory subjects, there were 11 elective subjects, and M1, M2 available for students to take.

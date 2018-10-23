@@ -147,12 +147,12 @@ The data rows are ordered the same way as the previous csv file output. In an in
 The following table summarizes the file handling works in this stage.
 <table>
   <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
-  <tr><th>ele_list.csv</th><th>Input</th><th>Ungrouped information about who takes what subjects (in any order, containing all Form 4-6 students)</th></tr>
-  <tr><th>stu_info_4.csv</th><th>Output</th><th>Tidied student information file for Form 4</th></tr>
-  <tr><th>stu_info_5.csv</th><th>Output</th><th>Tidied student information file for Form 5</th></tr>
-  <tr><th>stu_info_6.csv</th><th>Output</th><th>Tidied student information file for Form 6</th></tr>
-  <tr><th>sub_rec_4.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 4</th></tr>
-  <tr><th>sub_rec_5.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 5</th></tr>
-  <tr><th>sub_rec_6.ini</th><th>Output</th><th>Configuration file for use in other stages for Form 6</th></tr>
+  <tr><td>ele_list.csv</td><td>Input</td><td>Ungrouped information about who takes what subjects (in any order, containing all Form 4-6 students)</td></tr>
+  <tr><td>stu_info_4.csv</td><td>Output</td><td>Tidied student information file for Form 4</td></tr>
+  <tr><td>stu_info_5.csv</td><td>Output</td><td>Tidied student information file for Form 5</td></tr>
+  <tr><td>stu_info_6.csv</td><td>Output</td><td>Tidied student information file for Form 6</td></tr>
+  <tr><td>sub_rec_4.ini</td><td>Output</td><td>Configuration file for use in other stages for Form 4</td></tr>
+  <tr><td>sub_rec_5.ini</td><td>Output</td><td>Configuration file for use in other stages for Form 5</td></tr>
+  <tr><td>sub_rec_6.ini</td><td>Output</td><td>Configuration file for use in other stages for Form 6</td></tr>
 </table>
 

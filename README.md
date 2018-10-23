@@ -182,3 +182,17 @@ They are all pretty self explanatory.
   <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
   <tr><td>sub_time.csv</td><td>Output</td><td>Time (in minutes) needed for each paper</td></tr>
 </table>
+
+### Stage 4.0 - Arrange exam
+*Input:*
+- “sub_rec_4.ini”, “sub_rec_5.ini”, and “sub_rec_6.ini” – the configuration files made in the previous stage
+
+The task here is to set a timetable with minimal subject crashes. To avoid having so many students need to have different subject exams in consecutive days, subject crash should be calculated separately for each form seprately in order to obtain an optimum solution for each specific form. The optimal solution should be able to let most of the students have enough time for revision during exam break.
+
+#### Quantitative Method
+Given *n* subjects available, let the queue be the following:
+<table>
+  <tr><th>S<sub>1</sub></th><th>S<sub>2</sub></th><th>S<sub>3</sub></th><th>...</th><th>S<sub>n-2</sub></th><th>S<sub>n-1</sub></th><th>S<sub>n</sub></th></tr>
+</table>
+where S stands for subject. The maths comes from the following:
+![fig7](figures/fig7.png)

@@ -103,4 +103,19 @@ The following diagram displays the logic flow on user interface. There should al
 For arranging an exam, the first thing to do is to know all the subjects available. Note that no output is required for this stage. The input contains both short term (maximum 4 characters) and full name of each elective subject available, specified by the user. Since the input involved loads of data, user is recommended to insert this information using a csv file in advance. To sum up, the input in this procedure:
 - All available elective subjects’ name (both full name & short term not exceeding 4 characters) in csv file
 
-For the input format, the 1st column with all short terms (not exceeding 4 characters) of available elective subjects, with the 2nd column all relevant full names of those elective subjects.
+For the format, the first column with all short terms (not exceeding 4 characters) of available elective subjects, with the second column all relevant full names of those elective subjects.
+![fig2](figures/fig2.png)
+
+Subfunctions are are illustrated below, just go through the code or run the system for more information.
+<table>
+  <tr><th colspan="4">Update basic setting</th></tr>
+  <tr><th>Show current elective subjects available</th><th colspan="3">Modify subjects available</th></tr>
+  <tr><th></th><th>Add an elective subject</th><th>Delete an elective subject</th><th>Delete all subjects</th></tr>
+</table>
+
+### Stage 2.0 - Analyze information of students
+For analyzing information of students, loads of scattered student information (from Form 4-6) regarding elective subjects they took are inputted by the user. This stage tries to tidy up those data. The following input involves thousands of data, and user must insert this kind of information using a csv file.
+- Ungrouped subjects taken by students (in any order, containing all Form 4-6 students) - in csv file
+
+For the format, the first column contains the class which the student belongs to, carrying 2 characters – the form number at the front and the class (latin) letter at the back. The second column contains the class number of the student. The third column contains the full name of him/her. The fourth column contains a short term of an elective subject that the student is taking. Note that almost each student studies more than 1 subjects, a student will occupy more than 1 row of the data in this csv file.
+

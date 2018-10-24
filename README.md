@@ -217,3 +217,46 @@ For example, in our simulation, the output is
   <tr><td>timetable_5.txt</td><td>Output</td><td>Timetable for Form 5</td></tr>
   <tr><td>timetable_6.txt</td><td>Output</td><td>Timetable for Form 6</td></tr>
 </table>
+
+### Stage 5.0 - Allocate seat and produce final arrangement
+*Input:*
+- “sub_rec_4.ini”, “sub_rec_5.ini”, “sub_rec_6.ini” - the configuration files made in previous stage
+- “stu_info_4.csv”, “stu_info_5.csv”, “stu_info_6.csv” - the tidied student information files made in previous stage
+- “timetable_4.txt”, “timetable_5.txt”, “timetable_6.txt” - the timetables made in previous stage
+
+*Output:*
+- Seat allocation forms for a specific subject in a specific form – in csv files
+- Seat allocation forms for a specific student – in csv files
+
+For the first output, each column (from left to right) contains seat number, the number representing their current form, class, class number, and their full name respectively.
+
+![fig8](figures/fig8.png)
+
+For the second output, each column (from left to right) contains the day number, the paper (in short term), the seat number on that paper, and the duration of that exam respectively.
+
+![fig9](figures/fig9.png)
+
+*File handling (input):*
+<table>
+  <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
+  <tr><td>sub_rec_4.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 4</td></tr>
+  <tr><td>sub_rec_5.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 5</td></tr>
+  <tr><td>sub_rec_6.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 6</td></tr>
+  <tr><td>stu_info_4.csv</td><td>Input</td><td>Tidied student information file for Form 4</td></tr>
+  <tr><td>stu_info_5.csv</td><td>Input</td><td>Tidied student information file for Form 5</td></tr>
+  <tr><td>stu_info_6.csv</td><td>Input</td><td>Tidied student information file for Form 6</td></tr>
+  <tr><td>timetable_4.txt</td><td>Output</td><td>Timetable for Form 4</td></tr>
+  <tr><td>timetable_5.txt</td><td>Output</td><td>Timetable for Form 5</td></tr>
+  <tr><td>timetable_6.txt</td><td>Output</td><td>Timetable for Form 6</td></tr>
+</table>
+
+*File handling (output):*
+<table>
+  <tr><th colspan="4">ESAS</th></tr>
+  <tr><th colspan="4">seat_allocation</th></tr>
+  <tr><th>4</th><th>5</th><th>6</th><th>personal</th></tr>
+  <tr><td>[subject].csv</td><td>[subject].csv</td><td>[subject].csv</td><td>[identity].csv</td></tr>
+</table>
+Inside the folder of ESAS, there is a folder “seat_allocation”, with 4 different folders inside, as shown above. [subject] represents multiple files, with each one representing each subject. Similarly, [identity] represents multiple files for every student.
+
+

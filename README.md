@@ -1,7 +1,7 @@
 # Hong Kong School Internal Examination Seating Arrangement System
 
 ## Motivation
-I did this project and the write up in high school. I was bad in documentation and English so sorry for that. I put this up on GitHub to inspire high school students and hopefully someone can pick this up and optimize it (Excuse: I am too busy for this). I recommend (a) generalizing the code so it would be more flexible and more schools can adopt the system, (b) making a GUI.
+I did this project and the write up in high school. I was bad in documentation and English so sorry for that. I put this up on GitHub to inspire high school students and hopefully someone can pick this up and optimize it (Excuse: I am too busy for this). I recommend (a) generalizing the code so it would be more flexible and more schools can adopt the system, (b) making a GUI. Feel free to modify/distribute this programme (as long as you make it open source).
 
 ## Objectives
 ### Background
@@ -257,6 +257,11 @@ For the second output, each column (from left to right) contains the day number,
   <tr><th>4</th><th>5</th><th>6</th><th>personal</th></tr>
   <tr><td>[subject].csv</td><td>[subject].csv</td><td>[subject].csv</td><td>[identity].csv</td></tr>
 </table>
+
 Inside the folder of ESAS, there is a folder “seat_allocation”, with 4 different folders inside, as shown above. [subject] represents multiple files, with each one representing each subject. Similarly, [identity] represents multiple files for every student.
 
+## Conclusions
+Detailed implementation of sub-functions are not explained as it is already a very lengthy README file. Special thanks to my ICT teacher - Drizzt Wong for his insight and assistance.
 
+### Some MATLAB code?
+There is some MATLAB codes in the file [name_change](name_change). As the original data consists of real names I have to pay extra efforts before putting all of these on GitHub. I decided to use some random name generator to generate a list of distinct names, and then reverse engineer it into the desired input format. You probably do not need that but I will just put them here just in case.

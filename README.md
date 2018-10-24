@@ -195,4 +195,25 @@ Given *n* subjects available, let the queue be the following:
   <tr><th>S<sub>1</sub></th><th>S<sub>2</sub></th><th>S<sub>3</sub></th><th>...</th><th>S<sub>n-2</sub></th><th>S<sub>n-1</sub></th><th>S<sub>n</sub></th></tr>
 </table>
 where S stands for subject. The maths comes from the following:
+
 ![fig7](figures/fig7.png)
+
+The best solution is the *argmin* of the coefficient function.
+
+*Output:*
+- 3 timetable list (one for each form) – in txt files
+For example, in our simulation, the output is
+<table>
+  <tr><td>PHY</td><td>BAFS</td><td>BIO</td><td>HIST</td><td>CHIS</td><td>M2</td><td>M1</td><td>VA</td><td>GEOG</td><td>CLIT</td><td>ICT</td><td>ECON</td><td>CHEM</td></tr>
+</table>
+
+*File handling:*
+<table>
+  <tr><th>File Name</th><th>I/O</th><th>Description</th></tr>
+  <tr><td>sub_rec_4.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 4</td></tr>
+  <tr><td>sub_rec_5.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 5</td></tr>
+  <tr><td>sub_rec_6.ini</td><td>Input</td><td>Configuration file for subject crash optimization in Form 6</td></tr>
+  <tr><td>timetable_4.txt</td><td>Output</td><td>Timetable for Form 4</td></tr>
+  <tr><td>timetable_5.txt</td><td>Output</td><td>Timetable for Form 5</td></tr>
+  <tr><td>timetable_6.txt</td><td>Output</td><td>Timetable for Form 6</td></tr>
+</table>

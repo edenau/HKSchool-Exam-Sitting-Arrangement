@@ -1,6 +1,6 @@
 # Hong Kong School Internal Examination Seating Arrangement System
 
-***Interested Reader is referred the relevant page on my [personal webpage](https://edenau.github.io/exam-sitting/).***
+***Interested Reader is referred to the relevant page on my [personal webpage](https://edenau.github.io/exam-sitting/).***
 
 ## Motivation
 

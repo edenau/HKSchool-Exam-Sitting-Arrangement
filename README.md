@@ -1,7 +1,8 @@
 # Hong Kong School Internal Examination Seating Arrangement System
 
-## Motivation
 ***Interested Reader is referred the relevant page on my [personal webpage](https://edenau.github.io/exam-sitting/).***
+
+## Motivation
 
 I did this project and the write up in high school. I was bad in documentation and English so sorry for that. I put this up on GitHub to inspire high school students and hopefully someone can pick this up and optimize it (Excuse: I am too busy for this). I recommend (a) generalizing the code so it would be more flexible and more schools can adopt the system, (b) making a GUI. Feel free to modify/distribute this programme (as long as you make it open source).
 
